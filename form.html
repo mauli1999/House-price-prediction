@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Housing Price Prediction</title>
+    </head>
+    
+    <body>
+            <div class="Header">
+                    <h1 class="form" style="color:rgb(0, 0, 0); margin-left:10px; font-size:40px; text-align: center">House Details</h1>
+            </div>
+
+            <div id="reg-form" class="reg-form">
+            <form action="/result" method="POST">
+                <label for="house"> House Type</label>
+                <br>
+                <input type="radio" name="house" value="0" checked> Independent House<br>
+                <input type="radio" name="house" value="1"> Independent Floor<br>
+                <input type="radio" name="house" value="2"> Villa<br>
+                <input type="radio" name="house" value="3"> Appartment<br>
+                <input type="radio" name="house" value="4"> N/A<br>
+                
+                <br>
+                <br>
+                <label for="bhk"> Number of Rooms</label>
+                <input type="number" name="bhk"><br>
+
+                <br>
+                <br>
+                <label for="area"> Enter your Area</label>
+                <select name="area">
+                    <option value="0">Nikol</option>
+                    <option value="1">Paldi</option>
+                    <option value="2">Bodakdev</option>
+                    <option value="3">Satellite</option>
+                    <option value="4">Maninagar</option>
+                    <option value="5">Isanpur</option>
+                    <option value="6">Bopal</option>
+                    <option value="7">Chandkheda</option>
+                    <option value="8">Sindhubhavan</option>
+                    <option value="9">Prahladnagar</option>
+                    <option value="10">Thaltej</option>
+                    <option value="11">Vastral</option>
+                </select>
+                
+                <br>
+                <br>
+                <label for="locality score">Locality Score</label>
+                <input type="number" name="Locality Score"><br>
+
+                <br>
+                <br>
+                <label for="square feet">Square Feet</label>
+                <input type="number" name="Square Feet"><br>
+                
+                <br>
+                <br>
+                <label for="age">Age of the Property</label>
+                <input type="number" name="Age of the Property"><br>
+
+                <br>
+                <br>
+                <label for="swimmingpool">Swimming Pool</label>
+                <br>
+                <input type="radio" name="Swimming Pool" value="1" checked> Yes<br>
+                <input type="radio" name="Swimming Pool" value="0"> No<br>
+
+
+                <br>
+                <br>
+                <label for="lift">Lift</label>
+                <br>
+                <input type="radio" name="Lift" value="1" checked> Yes<br>
+                <input type="radio" name="Lift" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="joggingtrack">Jogging Track</label>
+                <br>
+                <input type="radio" name="Jogging Track" value="1" checked> Yes<br>
+                <input type="radio" name="Jogging Track" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="indoorgames">Indoor Games</label>
+                <br>
+                <input type="radio" name="Indoor Games" value="1" checked> Yes<br>
+                <input type="radio" name="Indoor Games" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="gym">Gym</label>
+                <br>
+                <input type="radio" name="Gym" value="1" checked> Yes<br>
+                <input type="radio" name="Gym" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="clubhouse">Club House</label>
+                <br>
+                <input type="radio" name="Club House" value="1" checked> Yes<br>
+                <input type="radio" name="Club House" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="childrenplayarea">Children Play Area</label>
+                <br>
+                <input type="radio" name="Children Play Area" value="1" checked> Yes<br>
+                <input type="radio" name="Children Play Area" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="carparking">Car Parking</label>
+                <br>
+                <input type="radio" name="Car Parking" value="1" checked> Yes<br>
+                <input type="radio" name="Car Parking" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="atm">ATM</label>
+                <br>
+                <input type="radio" name="ATM" value="1" checked> Yes<br>
+                <input type="radio" name="ATM" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="sportsfacility">Sports Facility</label>
+                <br>
+                <input type="radio" name="Sports Facility" value="1" checked> Yes<br>
+                <input type="radio" name="Sports Facility" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="multipurposeroom">Multipurpose Room</label>
+                <br>
+                <input type="radio" name="Multipurpose Room" value="1" checked> Yes<br>
+                <input type="radio" name="Multipurpose Room" value="0"> No<br>
+
+                <br>
+                <br>
+                <label for="furniture">Furniture</label>
+                <select name="Furniture">
+                        <option value="1">Furnished</option>
+                        <option value="0">Unfurnished</option>
+                        <option value="2">Semi-Furnished</option>
+                </select>
+                <br>
+                <br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+            </form>
+            <br>
+        </div>
+    </body>
+</html>
